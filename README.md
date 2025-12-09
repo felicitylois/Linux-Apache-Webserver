@@ -11,5 +11,5 @@ In this project, I built and secured an Apache web server on a Debian-based Linu
 
 ## 📸 Screenshots
 ### 1️⃣ Update System Packages
-```bash
+```shell
 sudo apt update && sudo apt upgrade -y

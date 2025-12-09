@@ -38,6 +38,8 @@ sudo systemctl stop apache2
 sudo systemctl restart apache2
 sudo systemctl enable apache2
 ```
+<img width="2880" height="1800" alt="03_Manage_Apache_as_a_System Service" src="https://github.com/user-attachments/assets/b60320d5-a301-40a6-ace3-ca125d52bd67" />
+
 
 ### 4️⃣ Configure and Secure the Server with UFW Firewall
 I secured the server using UFW, allowing only HTTP and HTTPS traffic to reduce the attack surface and prevent unauthorized access:

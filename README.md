@@ -14,6 +14,8 @@ In this project, I built and secured an Apache web server on a Debian-based Linu
 ```shell
 sudo apt update && sudo apt upgrade -y
 ```
+<img width="1938" height="1454" alt="01_Update System Packages" src="https://github.com/user-attachments/assets/793cd515-2258-4670-9492-1d2d764eaf39" />
+
 
 ### 2️⃣ Install Apache Web Server
 **Installed Apache using the package manager**
@@ -30,13 +32,13 @@ sudo systemctl status apache2
 
 ### 3️⃣ Manage Apache as a System Service
 I managed Apache using systemctl to start, stop, restart, and enable it on boot, ensuring the web server would always be available when the system started
-
 ```shell
 sudo systemctl start apache2
 sudo systemctl stop apache2
 sudo systemctl restart apache2
 sudo systemctl enable apache2
 ```
+
 ### 4️⃣ Configure and Secure the Server with UFW Firewall
 I secured the server using UFW, allowing only HTTP and HTTPS traffic to reduce the attack surface and prevent unauthorized access:
 <img width="971" height="768" alt="4_Configure_and_Secure_the Server_with_UFW_Firewall" src="https://github.com/user-attachments/assets/460bc4d1-4836-4d92-9dcf-a156be89e969" />
@@ -45,6 +47,14 @@ I secured the server using UFW, allowing only HTTP and HTTPS traffic to reduce t
 I confirmed the Apache web server was operational by opening a browser and visiting `http://localhost`, ensuring the default page loaded correctly.
 <img width="1372" height="866" alt="Verify_Apache_Is_Working" src="https://github.com/user-attachments/assets/84b5c569-9941-471d-adc6-d987637176f3" />
 
-
 ### 6️⃣ Check Network Configuration
-I used `ip a` to identify the server’s IP address and tested access from another device on the same network to verify external connectivity:
+I used `ip a` to identify the server’s IP address and tested access from another device on the same network to verify external connectivity
+<img width="962" height="475" alt=" 06_Check_Network_Configuration" src="https://github.com/user-attachments/assets/f604d93a-be2e-4d33-bc01-10162b83a85f" />
+
+### 🛠 Tools Used
+- Ubuntu
+- apache2
+- bash
+- apt
+- systemctl
+- ip

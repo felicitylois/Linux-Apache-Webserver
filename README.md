@@ -20,11 +20,13 @@ sudo apt update && sudo apt upgrade -y
 ```shell
 sudo apt install apache2 -y
 ```
+<img width="1953" height="1464" alt="01_Install_Apache_Web_Server" src="https://github.com/user-attachments/assets/02ab5a15-623c-4921-98aa-fd007bda7cb2" />
 
 **Check service status**
 ```shell
 sudo systemctl status apache2
 ```
+<img width="1938" height="1505" alt="Verify_service_status" src="https://github.com/user-attachments/assets/600ad265-86f9-47b7-8684-fe12ac031d58" />
 
 ### 3️⃣ Manage Apache as a System Service
 I managed Apache using systemctl to start, stop, restart, and enable it on boot, ensuring the web server would always be available when the system started
@@ -37,9 +39,12 @@ sudo systemctl enable apache2
 ```
 ### 4️⃣ Configure and Secure the Server with UFW Firewall
 I secured the server using UFW, allowing only HTTP and HTTPS traffic to reduce the attack surface and prevent unauthorized access:
+<img width="971" height="768" alt="4_Configure_and_Secure_the Server_with_UFW_Firewall" src="https://github.com/user-attachments/assets/460bc4d1-4836-4d92-9dcf-a156be89e969" />
 
 ### 5️⃣ Verify Apache Is Working
 I confirmed the Apache web server was operational by opening a browser and visiting `http://localhost`, ensuring the default page loaded correctly.
+<img width="1372" height="866" alt="Verify_Apache_Is_Working" src="https://github.com/user-attachments/assets/84b5c569-9941-471d-adc6-d987637176f3" />
+
 
 ### 6️⃣ Check Network Configuration
 I used `ip a` to identify the server’s IP address and tested access from another device on the same network to verify external connectivity:

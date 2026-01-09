@@ -11,7 +11,7 @@ In this project, I built and secured an Apache web server on a Debian-based Linu
 
 ## 📸 Screenshots
 ### 1️⃣ Update System Packages
-```shell
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 <img width="1938" height="1454" alt="01_Update System Packages" src="https://github.com/user-attachments/assets/793cd515-2258-4670-9492-1d2d764eaf39" />
@@ -19,20 +19,20 @@ sudo apt update && sudo apt upgrade -y
 
 ### 2️⃣ Install Apache Web Server
 **Installed Apache using the package manager**
-```shell
+```bash
 sudo apt install apache2 -y
 ```
 <img width="1953" height="1464" alt="01_Install_Apache_Web_Server" src="https://github.com/user-attachments/assets/02ab5a15-623c-4921-98aa-fd007bda7cb2" />
 
 **Check service status**
-```shell
+```bash
 sudo systemctl status apache2
 ```
 <img width="1938" height="1505" alt="Verify_service_status" src="https://github.com/user-attachments/assets/600ad265-86f9-47b7-8684-fe12ac031d58" />
 
 ### 3️⃣ Manage Apache as a System Service
 I managed Apache using systemctl to start, stop, restart, and enable it on boot, ensuring the web server would always be available when the system started
-```shell
+```bash
 sudo systemctl start apache2
 sudo systemctl stop apache2
 sudo systemctl restart apache2

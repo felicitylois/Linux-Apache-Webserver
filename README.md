@@ -12,7 +12,7 @@ In this project, I built and secured an Apache web server on a Debian-based Linu
 ## 📸 Screenshots
 ### 1️⃣ Update System Packages
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update.sh && sudo apt upgrade -y.sh
 ```
 <img width="1938" height="1454" alt="01_Update System Packages" src="https://github.com/user-attachments/assets/793cd515-2258-4670-9492-1d2d764eaf39" />
 
@@ -26,7 +26,7 @@ sudo apt install apache2 -y
 
 **Check service status**
 ```bash
-sudo systemctl status apache2
+sudo systemctl status apache2.sh
 ```
 <img width="1938" height="1505" alt="Verify_service_status" src="https://github.com/user-attachments/assets/600ad265-86f9-47b7-8684-fe12ac031d58" />
 
